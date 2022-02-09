@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/flashcanvas.js"></script>
+	<script src="libs/jSignature.min.js"></script>
+
     <title>----</title>
 </head>
 <body>
-    <canvas id='canvas'></canvas>
-    <button id="save">Save</button> 
-    <button id="clear">Clear</button>
-    <img src="https://preview.ibb.co/jnW4Qz/Grumpy_Cat_920x584.jpg" width="400" height="200" crossorigin="anonymous"/>
+    <div id="signature"></div>
+    <button onclick="resetCanvas()">Zurücksetzen</button>
+    <button onclick="exportCanvas()">Download</button>
     <script src="script.js"></script>
 </body>
 </html>
